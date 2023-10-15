@@ -1,0 +1,9 @@
+javac -cp .;checkthat.jar;junit5all.jar GaussianEliminationTest.java GaussianEliminationStructureTest.java GaussianEliminationTestSuite.java
+
+java -cp .;checkthat.jar;junit5all.jar org.junit.platform.console.ConsoleLauncher --scan-classpath
+
+java EquationSolver "+2.0,-1.0,1.0,8.0 -3.0,-1.0,2.0,-11.0 -2.0,1.0,2.0,-3.0"
+
+java EquationSolver "2,1,-1,8 -3,-1,2,-11 -2,1,2,-3"
+
+java EquationSolver "+1.0,0.3333333333333333,-0.6666666666666666,3.6666666666666665 +0.0,1.0,0.4000000000000001,2.6 +0.0,0.0,1.0,-0.9999999999999999"
